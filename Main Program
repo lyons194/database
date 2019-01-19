@@ -1,10 +1,11 @@
 """
 Main Program.
 
-This is the main program for an interactive database.  The database will 
+This is the main program for an interactive database.  The database will have a handful of functions that the user can select at any given time.
 
 
 """
+
 
 def data_add():
 	d = {}
@@ -19,7 +20,9 @@ def data_add():
 		d[b] = a
 	print(d)
 
+
 #'database' is the main component of the program.  All of components defined above will be include in the program below.
+
 
 def database():
 	while 1:
@@ -28,4 +31,6 @@ def database():
 		if master_query == "add":
 			data_add()
 
+
 """So far, I've defined two functions of the database:  'Add' and 'Replace'.  The Add function is defined above.  The Replace function is TBD."""
+
