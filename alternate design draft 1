@@ -1,0 +1,54 @@
+#Database random design draft.  Successful run of list creation and list filling.
+
+def k():
+	def spacer():
+		print("\n"*5)
+	def mini_spacer():
+		print("\n"); print(" "*2)
+	spacer()
+	mem = {}
+	query = int(input("How many?  ")); spacer()
+	a = []; spacer()
+	a.extend(" "*query); spacer(); spacer()
+	b = 0
+	while b < len(a):
+		rr = input("Q:  "); spacer(); spacer()
+		a[b] = rr
+		b = b + 1; spacer(); spacer()
+	while b == len(a):
+		c = input("  "); spacer(); spacer()
+		b = b + 1
+	while b > len(a):
+		spacer(); spacer()
+		menu = input("QQ:  "); spacer()
+		spacer(); spacer()
+		if menu == "rest":
+			spacer(); spacer()
+			qw = input("Resting rn.  Press enter to continue."+" "*2)
+			spacer(); spacer()
+		if menu == "dir":
+			spacer(); spacer()
+			print(a)
+			spacer(); spacer()
+		if menu == "quit":
+			spacer(); spacer()
+			print("Hello!")
+			spacer(); spacer()
+		if menu == "help":
+			help_dir_map = print("1 - rest ... {0}2 - dir ... {0}3 - quit ...{0}{0}".format("\n"*5))
+			help_query = input("Please enter the name of the command you need help with:  ")
+			if help_query == "rest":
+				print(1)
+			if help_query == "dir":
+				print(2)
+			if help_query == "quit":
+				print(3)
+				
+k()
+
+"""
+This program allows the user to enter how many files they want to add to the database memory.
+
+After the user enters in their data, the program then runs as a "main menu".  THe user is able to input certain key words that will prompt the database to reply to them.  This design is in the vein of my initial idea for this program (located in another branch).  This design (above) may not be implemented as is within the final draft, but it is a collection of code that contains progress I had hoped to make.
+
+"""
