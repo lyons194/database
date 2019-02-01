@@ -34,3 +34,52 @@ def database():
 
 """So far, I've defined two functions of the database:  'Add' and 'Replace'.  The Add function is defined above.  The Replace function is TBD."""
 
+
+#The most updated version of the database (below); updated on 2/1/2019.
+
+def database():
+	def spacer():
+		print("\n"*5)
+	def mini_spacer():
+		print("\n"); print(" "*2)
+	spacer()
+	while 1:
+		menu = input("QQ:  "); spacer()
+		if menu == "rest":
+			spacer(); spacer()
+			qw = input("Resting rn.  Press enter to continue."+" "*2)
+			spacer(); spacer()
+		if menu == "dir":
+			spacer(); spacer()
+			print(a)
+			spacer(); spacer()
+		if menu == "add":
+			spacer(); spacer()
+			mem = []
+			query = int(input("How many?  "))
+			spacer(); spacer
+			a = []
+			a.extend(" "*query)
+			b = 0
+			while b < len(a):
+				spacer(); rr = input("Q:  ");
+				spacer(); a[b] = rr
+				b = b + 1
+				print(a)
+			while b == len(a):
+				c = input("    "); spacer(); spacer()
+				b = b + 1
+			spacer(); spacer()
+		if menu == "quit":
+			spacer(); spacer()
+			print("Hello!")
+			spacer(); spacer()
+		if menu == "help":
+			help_dir_map = print("1 - rest ... {0}2 - dir ... {0}3 - quit ...{0}{0}".format("\n"*5))
+			help_query = input("Please enter the name of the command you need help with:  ")
+			if help_query == "rest":
+				print(1)
+			if help_query == "dir":
+				print(2)
+			if help_query == "quit":
+				print(3)
