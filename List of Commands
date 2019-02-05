@@ -15,3 +15,7 @@ The database will have a list of commands that the user can use in order to acce
 
 3 - add
 -"Add" allows the user to add more data to the database.  This command begins by asking the user how many pieces of data they would like to add to the database.  Based upon the number in the user's answer, the program will create a list of that many blank spots, and then will fill those spots with subsequent data points that are entered by the user.
+
+
+4 - help
+-"Help" allows the user to query the database's help menu, which provides information on each function within the database.
