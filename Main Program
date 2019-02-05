@@ -35,51 +35,57 @@ def database():
 """So far, I've defined two functions of the database:  'Add' and 'Replace'.  The Add function is defined above.  The Replace function is TBD."""
 
 
-#The most updated version of the database (below); updated on 2/1/2019.
+#The most updated version of the database (below); updated on 2/5/2019.
 
 def database():
 	def spacer():
 		print("\n"*5)
 	def mini_spacer():
-		print("\n"); print(" "*2)
+		print("\n");
+	def dotter():
+		print(".\n"*10)
 	spacer()
-	while 1:
-		menu = input("QQ:  "); spacer()
+	if 1:
+		spacer(); spacer()
+		print("D A T A B A S E...")
+		spacer(); spacer()
+	zx = 0
+	while zx == 0:
+		menu = input(" < ! > :  Please enter a command:  "); dotter()
+		sg = 0
 		if menu == "rest":
-			spacer(); spacer()
-			qw = input("Resting rn.  Press enter to continue."+" "*2)
-			spacer(); spacer()
+			dotter(); qw = input(" < ... >  :  Resting rn.  Press enter to continue."+" "*2); spacer(); spacer()
+		#Figure out how to create two dir channels, where a certain answer is returned if the program has a dataset and where another answer is returned in the program has no dataset.
 		if menu == "dir":
-			spacer(); spacer()
-			print(a)
-			spacer(); spacer()
+			dotter(); print("No dataset detected.  "); dotter()
 		if menu == "add":
-			spacer(); spacer()
-			mem = []
-			query = int(input("How many?  "))
-			spacer(); spacer
-			a = []
-			a.extend(" "*query)
-			b = 0
+			spacer(); spacer(); mem = []; query = int(input(" < ! > : How many data points would you like to enter into the system (answer with an integer)?  ")); mini_spacer(); dotter(); a = []; a.extend(" "*query); b = 0;
 			while b < len(a):
-				spacer(); rr = input("Q:  ");
-				spacer(); a[b] = rr
-				b = b + 1
-				print(a)
+				dotter; rr = input(" < ! > : Enter your data here:  "); spacer(); a[b] = rr; b = b + 1; print(a)
 			while b == len(a):
-				c = input("    "); spacer(); spacer()
-				b = b + 1
-			spacer(); spacer()
+				dotter(); c = input(" < ! > : **Press enter to finalize data entry.**  "); spacer(); spacer(); b = b + 1; spacer(); spacer(); sg = sg + 1
 		if menu == "quit":
-			spacer(); spacer()
-			print("Hello!")
-			spacer(); spacer()
+			zx = zx + 1
 		if menu == "help":
-			help_dir_map = print("1 - rest ... {0}2 - dir ... {0}3 - quit ...{0}{0}".format("\n"*5))
-			help_query = input("Please enter the name of the command you need help with:  ")
+			help_dir_map = print("{1}1 - rest ... {0}{1}2 - dir ... {0}{1}3 - quit ... {0}{1}4 - add... {0}{1}5 - help... {0}{0}".format("\n."*5, "-----> "))
+			help_query = input(" < ? > : Please enter the name of the command you need help with:  ")
 			if help_query == "rest":
-				print(1)
+				dotter()
+				print(" < ? > : The 'Rest' command allows you to put the program into a 'sleep' mode.{0}By using this command, you can halt operations of the program, but reactivate the program by pressing the Enter key.".format("\n"))
+				dotter()
 			if help_query == "dir":
-				print(2)
+				dotter()
+				print(" < ? > : The 'dir' command allows you to view the data contained in the database.{0}By using this command, you can view all available data sets within the system.  ".format("\n"))
+				dotter()
 			if help_query == "quit":
-				print(3)
+				dotter()
+				print(" < ? > : The 'quit' command shuts down the database.  You can restart the database by entering in the following command: 'database()'.  ")
+				dotter()
+			if help_query == "add":
+				dotter()
+				print(" < ? > : The 'add' command allows you to add data to the database.  Each time you use the add command, you create a new 'batch' of data that is entered into the database.  All of the 'batches' that are created by you are stored in the database library, and can be recalled at any time.  ")
+				dotter()
+			if help_query == "help":
+				dotter()
+				print(" < ? > : The 'help' command allows you to access the database's help menu, which provides instructions on how to use the database's commands and features.  ")
+
