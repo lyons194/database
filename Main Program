@@ -7,20 +7,6 @@ This is the main program for an interactive database.  The database will have a 
 """
 
 
-def data_add():
-	d = {}
-	a = 0
-	qq = int(input("Please how many items to add to the database?  "))
-	def spacer():
-		print("\n"*5)
-	while a < qq:
-		spacer()
-		b = input("?:  ")
-		a = a + 1
-		d[b] = a
-	print(d)
-
-
 #'database' is the main component of the program.  All of components defined above will be include in the program below.
 
 
