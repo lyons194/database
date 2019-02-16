@@ -8,7 +8,10 @@ This is the main program for an interactive database.  The database will have a 
 
 #The most updated version of the database (below); updated on 2/16/2019.
 
+#First, I define an external memory component, so that data entered into the database may be preserved and recalled.
 
+
+mem_list = []
 
 
 def database():
