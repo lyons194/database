@@ -11,10 +11,10 @@ This is the main program for an interactive database.  The database will have a 
 #First, I define an external memory component, so that data entered into the database may be preserved and recalled.
 
 
-mem_list = []
 
 
 def database():
+	mem_list = []
 	def spacer():
 		print("\n"*5)
 	def mini_spacer():
@@ -35,6 +35,8 @@ def database():
 		#Figure out how to create two dir channels, where a certain answer is returned if the program has a dataset and where another answer is returned in the program has no dataset.
 		if menu == "dir":
 			dotter(); print("No dataset detected.  "); dotter()
+		if menu == "dir2":
+			print(mem_list)
 		if menu == "add":
 			spacer(); spacer(); mem = []; query = int(input(" < ! > : How many data points would you like to enter into the system (answer with an integer)?  ")); mini_spacer(); dotter(); a = []; a.extend(" "*query); b = 0;
 			while b < len(a):
