@@ -6,7 +6,7 @@ This is the main program for an interactive database.  The database will have a 
 
 """
 
-#The most updated version of the database (as of 2/16/2019).
+#The most updated version of the database (as of 2/26/2019).
 
 def database():
 	mem_list = []
