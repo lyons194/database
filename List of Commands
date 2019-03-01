@@ -19,3 +19,10 @@ The database will have a list of commands that the user can use in order to acce
 
 4 - help
 -"Help" allows the user to query the database's help menu, which provides information on each function within the database.
+
+
+5 - quit
+-"Quit" allows the user to exit the database and return to the Python shell.
+
+6 - clear
+-"Clear" allows the user to delete all of the data entered into memory.
