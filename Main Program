@@ -6,16 +6,14 @@ This is the main program for an interactive database.  The database will have a 
 
 """
 
-#The most updated version of the database (as of 2/28/2019).
-
+#The most updated version of the database (as of 03/06/2019).
 
 def database():
 	master_mem = []
 	mem_list = []
+	spec_mem = []
 	def spacer():
 		print("\n"*5)
-	def mini_spacer():
-		print("\n");
 	def dotter():
 		print(".\n.\n.\n.\n.\n.\n.\n.\n.\n.")
 	spacer()
@@ -45,7 +43,7 @@ def database():
 			while b < len(a):
 				dotter; rr = input(". < ! > : Enter your data here:  "); dotter(); a[b] = rr; print(".{0}".format(a)); print(".\n."); mem_list.append(a[b]); master_mem.append(a[b]); b = b + 1
 			if b == len(a):
-				dotter(); c = input(". < ! > : **Press enter to finalize data entry.**  "); dotter(); dotter(); b = b + 1; spacer(); spacer(); sg = sg + 1
+				dotter(); c = input(". < ! > : **Press enter to finalize data entry.**  "); dotter(); dotter(); b = b + 1; sg = sg + 1
 		if menu == "quit":
 			zx = zx + 1
 		if menu == "clear":
