@@ -9,8 +9,8 @@ The database will have a list of commands that the user can use in order to acce
 -"Rest" puts the program on hold.  The user can reactivate the database by pressing the Enter key.  This is the equivalent of sleep mode for the program.
 
 
-2 - dir
--"Dir" displays the current directory of all the data stored in the database.
+2 - view
+-"view" displays the current directory of all the data stored in the database.
 
 
 3 - add
