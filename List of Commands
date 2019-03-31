@@ -1,9 +1,11 @@
 #A running list of all of the command words for the database.
 
+
 """
 The database will have a list of commands that the user can use in order to access all of the functions of the program.
 
 """
+
 
 1 - rest
 -"Rest" puts the program on hold.  The user can reactivate the database by pressing the Enter key.  This is the equivalent of sleep mode for the program.
@@ -24,5 +26,10 @@ The database will have a list of commands that the user can use in order to acce
 5 - quit
 -"Quit" allows the user to exit the database and return to the Python shell.
 
+
 6 - clear
 -"Clear" allows the user to delete all of the data entered into memory.
+
+
+7 - view int
+-"view int" allows the user to view all of the integer-type data that they have entered into the database.
