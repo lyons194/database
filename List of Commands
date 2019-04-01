@@ -43,4 +43,12 @@ The database will have a list of commands that the user can use in order to acce
 -The "view boolean" command allows the user to view all of the boolean-type data they have entered into the database.
 
 
+10 - view float
+-The "view float" command allows the user to view all of the float-type data they have entered into the database.
+
+
+11 - view other
+-The "view other" command allows the user to view all of the other-type data they have entered into the database.
+
+
 
